@@ -5,6 +5,14 @@
     }
 }
 
+html,body {
+	background-color: #eae9e9;
+}
+
+main {
+	background-color: #fff;
+}
+
 #logo {
   display: block;
   color: #fff;
