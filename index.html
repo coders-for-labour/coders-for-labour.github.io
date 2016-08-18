@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+	<base href="/" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,8 +22,8 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="banner">
-        <div class="container" id="banner-content">
+    <div class="container-fluid" id="header">
+        <div class="container" id="header-content">
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -31,7 +32,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <div id="logo"><img src="media/logo-white.png" /> Coders for Corbyn</div>
+                    <a id="logo" href="/"><img src="media/logo-white.png" /> Coders for Corbyn</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -39,20 +40,22 @@
                         </li>
                         <li><a href="#">Projects</a>
                         </li>
-                        <li><a href="#">Getting Started</a>
+                        <li><a href="getting-started">Getting Started</a>
                         </li>
                         <li><a href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <div class="row">
-                <div class="col-xs-11 col-sm-8 my-hero">
-                    <h1>Coders for Corbyn</h1>
-                    <p>A collection of enthusiastic developers trying to further the interests and values of the Corbyn For Labour campaign and beyond.</p>
-                    <a class="btn btn-lg btn-primary">Join us on Slack</a>
-                </div>
-            </div>
+			<div id="banner">
+				<div class="row">
+					<div class="col-xs-11 col-sm-8 my-hero">
+						<h1>Coders for Corbyn</h1>
+						<p>A collection of enthusiastic developers trying to further the interests and values of the Corbyn For Labour campaign and beyond.</p>
+						<a class="btn btn-lg btn-primary">Join us on Slack</a>
+					</div>
+				</div>
+			</div>
         </div>
         <video playsinline autoplay muted loop poster="media/bg.png" id="bgvid">
             <source src="media/bg.mp4" type="video/mp4">
@@ -76,7 +79,7 @@
             <div class="col-sm-4 thin-col">
                 <div data-icon="4" class="icon hp-icon"></div>
                 <h2 class="hp-header">Contribute</h2>
-                <p>Take a look through our <a href="#">getting started guide</a> and start coding for Corbyn today.</p>
+                <p>Take a look through our <a href="getting-started">getting started guide</a> and start coding for Corbyn today.</p>
             </div>
         </div>
         <br>
