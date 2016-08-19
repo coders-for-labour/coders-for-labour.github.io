@@ -18,7 +18,7 @@
     <![endif]-->
 
     <link rel="icon" href="media/logo.ico">
-    <title>Coders For Corbyn - Getting Started</title>
+    <title>Coders For Corbyn - Projects</title>
 </head>
 
 <body>
@@ -51,40 +51,27 @@
     </div>
 	<main>
 		<div class="container">
-			<h1>Getting Started</h1>
-			<h3>Steps for Joining</h3>
-			<ol>
-				<li>Read our code of conduct and manifesto</li>
-				<li>Introduce yourself on the Facebook group: <a href="https://www.facebook.com/groups/codersforcorbyn" target="_blank">https://www.facebook.com/groups/codersforcorbyn</a></li>
-				<li>Discuss new/ongoing projects on Slack: <a href="https://codersforcorbyn.slack.com" target="_blank">https://codersforcorbyn.slack.com</a></li>
-				<li>Join the Trello: <a href="https://trello.com/b/FTiw5SWJ/coders-4-corbyn" target="_blank">https://trello.com/b/FTiw5SWJ/coders-4-corbyn</a></li>
-				<li><b>Get coding!</b></li>
-			</ol>
-			<hr>
-			<h3>Contributors Guide</h3>
-			<ol>
-				<li>Comment code as you go, this will make life easier for somebody that steps into a project you have been working on.</li>
-				<li>If you are editing somebody else’s code, follow the same style/syntax and try to avoid cleaning somebody else’s code. Edit lines relevant to your task for a simpler git merge. Refactoring is a separate job.</li>
-				<li>Communicate with others if you are unsure. Join the <a href="https://codersforcorbyn.slack.com" target="_blank">Slack channel</a>, post on <a href="https://www.facebook.com/groups/codersforcorbyn" target="_blank">Facebook</a>, whatever makes you feel most comfortable. There is no question too silly.</li>
-			</ol>
-			<hr>
-			<h3>Code distribution</h3>
-			<p>
-			Code and other work product is distributed under the Coders For Corbyn Github org under an MIT licence. Other assets are released under a Creative Commons Attribution-ShareAlike 4.0 International license.
-			</p>
-			<ul>
-				<li><a href="https://github.com/coders-for-corbyn" target="_blank">https://github.com/coders-for-corbyn</a></li>
-				<li><a href="https://opensource.org/licenses/MIT" target="_blank">https://opensource.org/licenses/MIT</a></li>
-				<li><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">https://creativecommons.org/licenses/by-sa/4.0/</a></li>
-			</ul>
-			<hr>
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>To contribute please agree to our manifesto by <a href="http://eepurl.com/cb-nkr">signing up here</a>!</h3>
-                </div>
-            </div>
-            <br>
-            <br>
+			<h1>Projects</h1>
+			<div id="repositories-loader">
+				<div class="spinner">
+				  <div class="rect1"></div>
+				  <div class="rect2"></div>
+				  <div class="rect3"></div>
+				  <div class="rect4"></div>
+				  <div class="rect5"></div>
+				</div>
+			</div>
+			<div id="repositories-list" style="display: none">
+				<h3>GitHub Repositories</h3>
+				<div class="list-group">
+					<a target="_blank" class="list-group-item">
+						<h4 class="list-group-item-heading"></h4>
+						<p class="list-group-item-text"></p>
+					</a>
+				</div>
+			</div>
+			<br>
+			<br>
 		</div>
 	</main>
     <div class="container-fluid" id="footer">
@@ -131,6 +118,7 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="scripts/projects.js"></script>
 </body>
 
 </html>
