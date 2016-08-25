@@ -1,5 +1,11 @@
+#==============
+# Mac
+#==============
 .DS_Store
+
+#==============
 #VIM
+#==============
 # swap
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
@@ -11,5 +17,9 @@ Session.vim
 # auto-generated tag files
 tags
 
-#
-getting-started/mailchimp-config.php
+#==============
+# Site
+#==============
+_site
+.sass-cache
+.jekyll-metadata

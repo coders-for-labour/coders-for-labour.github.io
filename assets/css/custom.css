@@ -6,11 +6,12 @@
 }
 
 html,body {
-	background-color: #eae9e9;
+  background-color: #eae9e9;
 }
 
 main {
-	background-color: #fff;
+  background-color: #fff;
+  padding: 20px 0 40px 0;
 }
 
 #logo {
@@ -22,7 +23,7 @@ main {
 }
 
 #logo:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 #logo img {
@@ -61,15 +62,20 @@ main {
 }
 
 video#bgvid { 
+  display: none;
     width: 100%;
     min-width: 1100px;
     height: auto;
     z-index: 1;
-    background: url(bg.png) no-repeat;
+    background: url(../images/bg.png) no-repeat;
     background-size: cover; 
     position: absolute;
     top: 0;
     left: 0;
+}
+
+[data-title="Home"] video#bgvid {
+  display: block;
 }
 
 #header-content {
@@ -83,19 +89,29 @@ video#bgvid {
 }
 
 #banner {
-	padding-top: 10px;
-	height: 530px;
+  display: none;
+  padding-top: 10px;
+  height: 530px;
+}
+
+[data-title="Home"] #banner {
+  display: block;
 }
 
 #tint { 
+  display: none;
     position: absolute;
     top: 0;
     left: 0;
-	right: 0;
-	bottom: 0;
+  right: 0;
+  bottom: 0;
     z-index: 2;
     background: red;
     opacity: 0.6;
+}
+
+[data-title="Home"] #tint {
+  display: block;
 }
 
 #header {
@@ -156,45 +172,45 @@ video#bgvid {
 }
 
 .hp-icon {
-	padding-top:0.5em;
-	color: #da2728;
-	font-size: 9em;
-	display:block;
-	text-align:center;
+  padding-top:0.5em;
+  color: #da2728;
+  font-size: 9em;
+  display:block;
+  text-align:center;
 }
 
 .thin-col {
-	padding:0 2em;
-	padding-bottom: 2em;
+  padding:0 2em;
+  padding-bottom: 2em;
 }
 
 .hp-header {
-	margin-top: 0;
-	font-size: 2em;
-	color: #3D3D3D;
+  margin-top: 0;
+  font-size: 2em;
+  color: #3D3D3D;
 }
 
 .my-hero {
-	padding-top: 3em;
-	font-size:2em;
+  padding-top: 3em;
+  font-size:2em;
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	.my-hero {
-		padding: 0em;
-		font-size: 1.5em;
-	}
-	#banner {
-		height: auto;
-		margin: 1em;
+  .my-hero {
+    padding: 0em;
+    font-size: 1.5em;
+  }
+  #banner {
+    height: auto;
+    margin: 1em;
  }
    #header-content div.row {
     margin-left: 0px;
  }
  
  video#bgvid {
-	margin-left: 50%;
+  margin-left: 50%;
     transform: translateX(-50%);
  }
 }

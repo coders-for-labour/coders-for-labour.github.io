@@ -2,7 +2,6 @@ $(function() {
 	var itemElement;
 	
 	$.get("https://api.github.com/orgs/coders-for-corbyn/repos", function(data) {
-		console.log(data);
 		populate(data);
 		$("#repositories-loader").hide();
 		$("#repositories-list").show();
