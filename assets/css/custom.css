@@ -79,10 +79,8 @@ video#bgvid {
 }
 
 [data-title="Home"] #header {
-  /*position: relative;*/
   background: none;
   margin-bottom: -70px;
-  /*z-index: 100;*/
 }
 
 #header-content {
@@ -202,8 +200,20 @@ video#bgvid {
   font-size:2em;
 }
 
+@media (max-width: 995px) {
+  [data-title="Home"] #header {
+    background-color: #9a0201;
+    margin-bottom: 0;
+  }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  [data-title="Home"] #header {
+    background-color: #9a0201;
+    margin-bottom: 0;
+  }
+
   .my-hero {
     padding: 0em;
     font-size: 1.5em;
