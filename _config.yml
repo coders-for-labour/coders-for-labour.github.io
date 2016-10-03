@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Coders for Corbyn
+title: Coders for Labour
 email: info@codersforcorbyn.com
-description: A collection of enthusiastic developers trying to further the interests and values of the Corbyn For Labour campaign and beyond.
+description: A collection of enthusiastic developers trying to further the interests and values of the Labour Party.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.codersforcorbyn.com" # the base hostname & protocol for your site
-twitter_username: CodersForCorbyn
-github_username: coders-for-corbyn
+url: "http://www.codersforlabour.com" # the base hostname & protocol for your site
+twitter_username: CodersForLabour
+github_username: coders-for-labour
 
 # Build settings
 markdown: kramdown
