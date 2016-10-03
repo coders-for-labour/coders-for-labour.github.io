@@ -1,7 +1,7 @@
 $(function() {
 	var itemElement;
 	
-	$.get("https://api.github.com/orgs/coders-for-corbyn/repos", function(data) {
+	$.get("https://api.github.com/orgs/coders-for-labour/repos", function(data) {
 		populate(data);
 		$("#repositories-loader").hide();
 		$("#repositories-list").show();
@@ -11,7 +11,7 @@ $(function() {
 		itemElement = $("#repositories-list .list-group a.list-group-item:first").remove().clone();
 		
 		$(data).each(function() {
-			if (this.name == "coders-for-corbyn.github.io")
+			if (this.name == "coders-for-labour.github.io")
 				return true;
 			
 			createItem(this);
