@@ -7,8 +7,9 @@ This site is built using Jekyll and hosted on Github Pages.
 - Install Jekyll if you do not have it already - [jekyllrb.com/docs/quickstart](https://jekyllrb.com/docs/quickstart/)
 
 - `git clone git@github.com:coders-for-labour/coders-for-labour.github.io.git`
-- `jekyll build` will do the first build of the site and produce a directory called `_site`. __This directory will always get wiped when running this command, never edit this directory__.
-- `jekyll serve` will build the site __and__ start a web server for you to visit - [http://localhost:4000](http://localhost:4000)
+- `bundle install`
+- `bundle exec jekyll build` will do the first build of the site and produce a directory called `_site`. __This directory will always get wiped when running this command, never edit this directory__.
+- `bundle exec jekyll serve` will build the site __and__ start a web server for you to visit - [http://localhost:4000](http://localhost:4000)
 
 ### Dev notes:
 
