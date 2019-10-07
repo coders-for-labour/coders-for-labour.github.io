@@ -382,4 +382,8 @@ video#bgvid {
   .hero-banner__copy-inner {
     max-width: none;
   }
+
+  .discord-widget {
+    display: none;
+  }
 }
